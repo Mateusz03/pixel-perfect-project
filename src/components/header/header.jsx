@@ -5,7 +5,9 @@ import "./header.scss";
 const Header = () => {
   return (
     <header>
-      <HeaderNavbar />
+      <div className="darkening">
+        <HeaderNavbar />
+      </div>
     </header>
   );
 };

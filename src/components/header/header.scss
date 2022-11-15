@@ -4,3 +4,7 @@ header {
   height: 100vh;
   background-image: url("../../images/header/first_image.png"); //here i define url for first config
 }
+.darkening {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
