@@ -1,9 +1,12 @@
 @import "../../../colors.scss";
 
 .navbar-container {
+  width: calc(100% - 175px * 2);
+  margin: 0px 175px;
+  margin-top: 28px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .navbar-logo {
   color: $color-white;
@@ -13,13 +16,62 @@
   letter-spacing: 0.05em;
   text-decoration: none;
 }
+.navbar-list-and-icons {
+  width: 1250px;
+  height: 39.5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.links-container {
+  height: 100%;
+}
+.links-container > .link:nth-child(1) {
+  margin-right: 62px;
+}
+.links-container > .link:nth-child(2) {
+  margin-right: 63px;
+}
+.links-container > .link:nth-child(3) {
+  margin-right: 109px;
+}
+.links-container > .link:nth-child(4) {
+  margin-right: 109px;
+}
 .link {
+  height: 100%;
   text-decoration: none;
   font-size: 16px;
+  color: $color-white;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
 }
+
 .link:visited {
   color: $color-white;
 }
 .link:active {
   color: $color-white;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: $color-white;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.nav-icons-container {
+  display: flex;
+  gap: 23px;
+  cursor: pointer;
 }

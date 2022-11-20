@@ -1,10 +1,37 @@
+@import "../../colors.scss";
+
 header {
+  position: absolute;
+  top: 0;
   min-height: 240px;
   max-height: 2160px;
+  width: 100vw;
   height: 100vh;
-  background-image: url("../../images/header/first_image.png"); //here i define url for first config
+  color: $color-white;
+  z-index: 0;
 }
 .darkening {
   background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+.content {
+  margin: auto 175px auto 175px;
+  width: calc(100% - 175px * 2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 1;
+}
+.background-image {
+  width: 400%;
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  position: absolute;
+  z-index: -1;
 }

@@ -1,6 +1,6 @@
 var plugins = [{
       name: 'partytown',
-      plugin: require('C:/Users/4I_2/Desktop/Nowy folder (2)/pixel-perfect-project/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('C:/Users/mateu/OneDrive/Pulpit/pixel-perfect-project/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */

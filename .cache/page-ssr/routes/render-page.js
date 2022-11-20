@@ -4917,24 +4917,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!***********************************************************************************************************************!*\
-  !*** external "C:\\Users\\4I_2\\Desktop\\Nowy folder (2)\\pixel-perfect-project\\node_modules\\react-dom\\server.js" ***!
-  \***********************************************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** external "C:\\Users\\mateu\\OneDrive\\Pulpit\\pixel-perfect-project\\node_modules\\react-dom\\server.js" ***!
+  \****************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\4I_2\\Desktop\\Nowy folder (2)\\pixel-perfect-project\\node_modules\\react-dom\\server.js");
+module.exports = require("C:\\Users\\mateu\\OneDrive\\Pulpit\\pixel-perfect-project\\node_modules\\react-dom\\server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!******************************************************************************************************************!*\
-  !*** external "C:\\Users\\4I_2\\Desktop\\Nowy folder (2)\\pixel-perfect-project\\node_modules\\react\\index.js" ***!
-  \******************************************************************************************************************/
+/*!***********************************************************************************************************!*\
+  !*** external "C:\\Users\\mateu\\OneDrive\\Pulpit\\pixel-perfect-project\\node_modules\\react\\index.js" ***!
+  \***********************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\4I_2\\Desktop\\Nowy folder (2)\\pixel-perfect-project\\node_modules\\react\\index.js");
+module.exports = require("C:\\Users\\mateu\\OneDrive\\Pulpit\\pixel-perfect-project\\node_modules\\react\\index.js");
 
 /***/ }),
 
@@ -5228,6 +5228,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/require chunk loading */
