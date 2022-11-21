@@ -3419,10 +3419,7 @@ const IndividualOffer = props => {
     className: "offer-price"
   }, props.price))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "offer-button"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_images_offer_arrow__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    rotate: "180",
-    stroke: "#000000"
-  }))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_images_offer_arrow__WEBPACK_IMPORTED_MODULE_6__["default"], null))));
 };
 const Offer = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -3469,7 +3466,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const OfferArrow = () => {
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("svg", {
+  return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "24.616",
     height: "21.538",
@@ -3492,7 +3489,7 @@ const OfferArrow = () => {
     stroke: "#000",
     fill: "transparent",
     "data-name": "Path 429"
-  }))));
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OfferArrow);
 

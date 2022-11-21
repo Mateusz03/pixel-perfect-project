@@ -1,0 +1,70 @@
+@import "../../colors.scss";
+.benefits-container {
+  margin-top: 280px;
+  padding: 0px 175px 0px 175px;
+  position: absolute;
+  top: 200vh;
+  width: calc(100% - 175px * 2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.items-container {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.under-line {
+  margin-top: 40px;
+  width: 130px;
+  background-color: black;
+  height: 8px;
+}
+.benefit-item-container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+.benefit-item-container {
+  width: 25%;
+  height: 20%;
+}
+.benefit-item-container-item {
+  font-size: 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.benefit-button {
+  width: 380px;
+  height: 78px;
+  background-color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.benefit-button-text {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefit-arrow-button {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

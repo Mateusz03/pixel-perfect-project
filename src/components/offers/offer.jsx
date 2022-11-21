@@ -7,11 +7,30 @@ import pic3 from "../../images/offer/pic3.png";
 import pic4 from "../../images/offer/pic4.png";
 import OfferArrow from "../../images/offer/arrow";
 const IndividualOffer = (props) => {
+  const [isHover, setHover] = useState(false);
+
+  const buttonStyle = {
+    background: " linear-gradient(to right, black 50%, white 50%)",
+    backgroundSize: " 200% 100%",
+    backgroundPosition: isHover ? "left bottom" : " right bottom",
+    transition: "all 200ms ease-out",
+  };
+
   return (
     <div
       style={{ backgroundImage: `url(${props.src})`, height: ` ${props.y}px` }}
       className="individual-offer"
     >
+      <div
+        className="hover-element"
+        onMouseEnter={() => {
+          setHover(true);
+        }}
+        onMouseLeave={() => {
+          setHover(false);
+        }}
+        style={{ height: `${props.y}px` }}
+      ></div>
       <div
         className="offer-coverage"
         style={{
@@ -20,15 +39,15 @@ const IndividualOffer = (props) => {
       >
         <div className="offer-information">
           <div className="offer-header">
-            <p className="offer-title">
-              {props.title.split("/n").map((value) => {
+            <div>
+              {props.title.split("/n").map((value, key) => {
                 return (
-                  <>
+                  <p className="offer-title" key={key}>
                     {value} <br />
-                  </>
+                  </p>
                 );
               })}
-            </p>
+            </div>
             <div className="offer-rectangle"></div>
           </div>
           <div>
@@ -36,8 +55,8 @@ const IndividualOffer = (props) => {
             <div className="offer-price">{props.price}</div>
           </div>
         </div>
-        <div className="offer-button">
-          <OfferArrow />
+        <div className="offer-button" style={buttonStyle}>
+          <OfferArrow hover={isHover} />
         </div>
       </div>
     </div>

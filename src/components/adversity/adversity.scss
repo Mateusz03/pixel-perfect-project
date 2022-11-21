@@ -1,0 +1,43 @@
+.adversity-container {
+  margin-top: calc(180px * 3);
+  position: absolute;
+  width: calc(100% - 175px);
+  padding: 0px 0px 0px 175px;
+  top: 300vh;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.adversity-lines-background {
+  position: absolute;
+  left: 76%;
+  width: 290px;
+  height: 150px;
+  background-image: url("../../images/adversity/lines.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.adversity-background {
+  position: absolute;
+  top: calc(150px / 2);
+  width: 80%;
+  height: 60%;
+  background-image: url("../../images/adversity/picture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.adversity-text {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  font-size: 65px;
+  font-weight: bold;
+}
+.adversity-underline {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  width: 610px;
+  height: 20px;
+  background-color: black;
+}

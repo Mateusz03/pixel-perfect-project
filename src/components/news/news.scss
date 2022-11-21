@@ -1,0 +1,13 @@
+.news-container {
+  margin-top: calc(180px * 3);
+  position: absolute;
+  width: calc(100% - 175px * 2);
+  padding: 0px 175px 0px 175px;
+  top: 400vh;
+  height: 100vh;
+  text-align: center;
+}
+.news-title {
+  font-size: 65px;
+  font-weight: bold;
+}

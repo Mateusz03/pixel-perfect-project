@@ -4,5 +4,18 @@ import HeaderForm from "./header/form/form";
 import Title from "./header/title/title";
 import Swapbar from "./header/swapbar/swapbar";
 import Offer from "./offers/offer";
+import Benefits from "./benefits/benefits";
+import Adversity from "./adversity/adversity";
+import News from "./news/news";
 
-export { Header, HeaderNavbar, Title, HeaderForm as Form, Swapbar, Offer };
+export {
+  Header,
+  HeaderNavbar,
+  Title,
+  HeaderForm as Form,
+  Swapbar,
+  Offer,
+  Benefits,
+  Adversity,
+  News,
+};
