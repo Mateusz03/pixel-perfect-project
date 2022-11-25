@@ -7,6 +7,8 @@ import Offer from "./offers/offer";
 import Benefits from "./benefits/benefits";
 import Adversity from "./adversity/adversity";
 import News from "./news/news";
+import Footer from "./footer/footer";
+import Gallery from "./gallery/gallery";
 
 export {
   Header,
@@ -18,4 +20,6 @@ export {
   Benefits,
   Adversity,
   News,
+  Footer,
+  Gallery,
 };

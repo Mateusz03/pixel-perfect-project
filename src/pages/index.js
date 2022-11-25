@@ -3,6 +3,8 @@ import "../App.scss";
 import {
   Adversity,
   Benefits,
+  Footer,
+  Gallery,
   Header,
   News,
   Offer,
@@ -16,6 +18,8 @@ function App() {
       <Benefits />
       <Adversity />
       <News />
+      <Gallery />
+      <Footer />
     </div>
   );
 }

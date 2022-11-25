@@ -9,6 +9,7 @@
   justify-content: space-between;
 }
 .navbar-logo {
+  width: 20%;
   color: $color-white;
   font-size: 48px;
   font-weight: bolder;
@@ -17,27 +18,20 @@
   text-decoration: none;
 }
 .navbar-list-and-icons {
-  width: 1250px;
+  width: 80%;
   height: 39.5px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 .links-container {
+  width: 65%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.links-container > .link:nth-child(1) {
-  margin-right: 62px;
-}
-.links-container > .link:nth-child(2) {
-  margin-right: 63px;
-}
-.links-container > .link:nth-child(3) {
-  margin-right: 109px;
-}
-.links-container > .link:nth-child(4) {
-  margin-right: 109px;
-}
+
 .link {
   height: 100%;
   text-decoration: none;

@@ -1,12 +1,10 @@
 @import "../../colors.scss";
 .offer-container {
   margin-top: 140px;
-  position: absolute;
-  top: 100vh;
   width: calc(100% - 175px * 2);
   padding: 0px 175px 0px 175px;
-  height: 100vh;
   z-index: 0;
+  display: grid;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -14,11 +12,11 @@
 }
 .individual-offer {
   width: 770px;
+  margin-top: 28px;
   background-repeat: no-repeat;
   animation: background-hover0 200ms linear both;
   animation-direction: reverse;
   font-weight: bold;
-  // position: relative;
 }
 .individual-offer:hover {
   animation: background-hover1 200ms linear both;

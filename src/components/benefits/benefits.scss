@@ -1,21 +1,19 @@
 @import "../../colors.scss";
 .benefits-container {
-  margin-top: 280px;
+  margin-top: 140px;
   padding: 0px 175px 0px 175px;
-  position: absolute;
-  top: 200vh;
   width: calc(100% - 175px * 2);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .items-container {
-  height: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .under-line {
@@ -30,21 +28,27 @@
   justify-content: space-between;
   align-self: flex-start;
 }
-.benefit-item-container {
-  width: 25%;
+
+.benefit-item {
+  width: 300px;
   height: 20%;
-}
-.benefit-item-container-item {
   font-size: 28px;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: flex-end;
+}
+.text-title {
+  width: 300px;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.25;
 }
 .benefit-button {
   width: 380px;
   height: 78px;
   background-color: black;
   font-size: 18px;
+  margin-top: 100px;
   font-weight: bold;
   text-transform: uppercase;
   color: white;

@@ -12,41 +12,23 @@ import BenefitsArrow from "../../images/benefits/arrow";
 
 const BenefitItem = (props) => {
   return (
-    <div
-      className={
-        props.type === "title"
-          ? "benefit-item-container benefit-item-container-title"
-          : "benefit-item-container benefit-item-container-item"
-      }
-    >
+    <div className="benefit-item">
       {props.type === "item" && (
-        <div style={{ display: "flex", gap: "44px", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "44px",
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
           <img src={props.src} style={{ height: "120px" }} alt="img" />
-          <div>
-            {props.text.split("/n").map((text, key) => {
-              return <div key={key}>{text}</div>;
-            })}
-          </div>
+          {props.text}
         </div>
       )}
       {props.type === "title" && (
-        <div>
-          {props.text.split("/n").map((text, key) => {
-            return (
-              <>
-                <div
-                  key={key}
-                  style={{
-                    fontSize: "48px",
-                    fontWeight: "bold",
-                    lineHeight: "1.25",
-                  }}
-                >
-                  {text}
-                </div>
-              </>
-            );
-          })}
+        <div className="text-title">
+          {props.text}
           <div className="under-line"></div>
         </div>
       )}
@@ -60,40 +42,29 @@ const Benefits = () => {
   return (
     <Container className="benefits-container">
       <div className="items-container">
-        <BenefitItem
-          type="title"
-          text="Lorem/nipsum/ndolor sit/namet,/nconse"
-        />
+        <BenefitItem type="title" text="Lorem ipsum dolor sit amet, conse" />
         <BenefitItem type="item" src={pic6} text="Lorem ipsum" />
         <BenefitItem
           type="item"
           src={pic5}
-          text="Lorem ipsum/ndolor sit amet conse"
+          text="Lorem ipsum dolor sit amet conse"
         />
-        <BenefitItem
-          type="item"
-          src={pic4}
-          text="Lorem ipsum/ndolor sit amet, conse"
-        />
-        <BenefitItem
-          type="item"
-          src={pic7}
-          text="Lorem ipsum/ndolor sit amet, conse"
-        />
+        <BenefitItem type="item" src={pic4} text="Lorem ipsum dolor sit amet" />
+        <BenefitItem type="item" src={pic7} text="Lorem ipsum dolor sit amet" />
         <BenefitItem
           type="item"
           src={pic1}
-          text="Lorem ipsum dolor/nsit amet, conse/nlorem ipsum lorem ipsum"
+          text="Lorem ipsum dolor sit amet, conse lorem ipsum lorem"
         />
         <BenefitItem
           type="item"
           src={pic2}
-          text="Lorem ipsum dolor/nsit amet, conse/nlorem ipsum lorem ipsum"
+          text="Lorem ipsum dolor sit amet, conse lorem ipsum lorem "
         />
         <BenefitItem
           type="item"
           src={pic3}
-          text="Lorem ipsum dolor/nsit amet, conse/nlorem ipsum lorem ipsum"
+          text="Lorem ipsum dolor sit amet, conse lorem ipsum lorem "
         />
       </div>
       <div
